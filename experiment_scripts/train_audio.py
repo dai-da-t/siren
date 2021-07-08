@@ -52,7 +52,6 @@ else:
 model.cuda()
 
 root_path = os.path.join(opt.logging_root, opt.experiment_name)
-utils.cond_mkdir(root_path)
 
 # Define the loss
 loss_fn = loss_functions.function_mse
